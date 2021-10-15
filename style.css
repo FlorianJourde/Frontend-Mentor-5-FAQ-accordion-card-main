@@ -15,6 +15,7 @@ body {
   width: 100%;
   display: flex;
   font-size: 0.8em;
+  transition: all 0.5s;
 }
 
 .card {
