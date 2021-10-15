@@ -1,0 +1,139 @@
+$very-dark-desaturated-blue: hsl(238, 29%, 16%);
+$soft-red: hsl(14, 88%, 65%);
+$soft-violet: hsl(273, 75%, 66%);
+$soft-blue: hsl(240, 73%, 65%);
+$very-dark-grayish-blue: hsl(237, 12%, 33%);
+$dark-grayish-blue: hsl(240, 6%, 50%);
+$light-grayish-blue: hsl(240, 5%, 91%);
+
+*, ::after, ::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  background: linear-gradient($soft-violet, $soft-blue) fixed;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  font-size: 0.8em;
+}
+
+.card {
+  background-image: url("images/bg-pattern-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  text-align: center;
+  margin: auto;
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 20px;
+  box-shadow: 0 50px 50px hsla(0, 0%, 0%, 0.25);
+}
+
+.card-content {
+  margin-top: -9rem;
+}
+
+h1 {
+  margin-bottom: 2rem;
+  font-size: 2.5em;
+}
+
+.illustration {
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3rem;
+}
+
+.illustration-box {
+  width: 100px;
+  position: absolute;
+  margin-top: 4.2rem;
+  margin-left: 0;
+}
+
+.content {
+  display:none
+}
+
+ul {
+  text-align: left;
+}
+
+li {
+  .title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+
+  img {
+    width: 10px;
+    height: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  hr {
+    border: 0;
+    border-bottom: 1px solid $light-grayish-blue;
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    font-size: 0.9em;
+  }
+
+  h1 {
+    text-align: left;
+    padding-right: 50px;
+  }
+
+  li {
+    img {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  }
+
+  .card {
+    background-image: url("images/bg-pattern-desktop.svg");
+    background-position: left -37rem top -19rem;
+    width: 900px;
+    padding: 5rem;
+    overflow: hidden;
+  }
+
+  .illustration {
+    width: 450px;
+    margin-left: -10rem;
+    margin-right: 5rem;
+    margin-bottom: auto;
+    margin-top: auto;
+  }
+
+  .illustration-box {
+    width: 175px;
+    margin-top: 8rem;
+    margin-left: -10rem;
+  }
+
+  .card-content {
+    display: flex;
+    margin-top: 0;
+  }
+
+  .card-text {
+    flex-grow: 1;
+  }
+}
